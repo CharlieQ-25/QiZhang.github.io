@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f4">
+  <meta name="description" content="Personal profile and downloadable résumé.">
+  <title>Personal CV | Your Name</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Back to top"><span class="brand-icon" id="initials">CV</span><span id="brand-name">Personal CV</span></a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#resume">Résumé</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> PERSONAL WEBSITE <span class="eyebrow-slash">/</span> CURRICULUM VITAE</p>
+        <h1 id="hero-title">Hello, I'm<br><span id="person-name">Your Name</span><span class="period">.</span></h1>
+        <p class="role" id="person-role">Your professional title or research area</p>
+        <p class="intro" id="person-intro">A simple home for my professional background, experience, and the latest version of my résumé.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#resume" id="resume-action">View my résumé <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" id="download-hero" href="assets/cv.pdf" download="CV.pdf" hidden>Download PDF <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <aside class="hero-aside" aria-label="Profile overview">
+        <div class="aside-topline"><span>PROFILE</span><span>01 / 03</span></div>
+        <div class="graphic-mark" aria-hidden="true"><span class="mark-circle circle-1"></span><span class="mark-circle circle-2"></span><span class="mark-circle circle-3"></span><span class="mark-line"></span></div>
+        <div class="aside-bottom"><span class="aside-label">OPEN TO CONNECT</span><span class="aside-location" id="person-location">Professional profile</span></div>
+      </aside>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container section-grid">
+        <div class="section-rail"><p class="section-index">01 — ABOUT</p></div>
+        <div class="section-content">
+          <h2 id="about-title">A little about me<span class="period">.</span></h2>
+          <p class="about-text" id="about-copy">Write 2–4 sentences about your education, work, research interests, or career goals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resume-section" id="resume" aria-labelledby="resume-title">
+      <div class="container section-grid">
+        <div class="section-rail"><p class="section-index">02 — RÉSUMÉ</p></div>
+        <div class="section-content">
+          <div class="resume-heading">
+            <div><h2 id="resume-title">My résumé<span class="period">.</span></h2><p id="resume-note" class="section-subtitle">Education, experience, projects, and selected achievements.</p></div>
+            <a class="button button-primary download-inline" id="download-resume" href="assets/cv.pdf" download="CV.pdf" hidden>Download PDF <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="document-shell">
+            <div class="document-toolbar"><div class="document-file"><span class="file-icon" aria-hidden="true">PDF</span><span>Curriculum Vitae <span class="file-ext">· PDF document</span></span></div><span class="status" id="cv-status">Checking file…</span></div>
+            <div class="pdf-empty" id="pdf-empty" role="status" aria-live="polite">
+              <div class="empty-icon" aria-hidden="true">↗</div>
+              <h3>Ready for your CV</h3>
+              <p>Upload a PDF named <code>cv.pdf</code> to the <code>assets</code> folder in your GitHub repository. It will appear here automatically.</p>
+            </div>
+            <iframe class="pdf-frame" id="pdf-frame" title="Online preview of curriculum vitae" loading="lazy" hidden></iframe>
+          </div>
+          <p class="preview-note">If the embedded PDF is not supported in your browser, use the download button above.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container section-grid">
+        <div class="section-rail"><p class="section-index">03 — CONTACT</p></div>
+        <div class="section-content">
+          <h2 id="contact-title">Let's connect<span class="period">.</span></h2>
+          <p class="section-subtitle">Interested in connecting or learning more? Feel free to get in touch.</p>
+          <div class="contact-links" id="contact-links"></div>
+          <p class="contact-placeholder" id="contact-placeholder">Add your email or professional links in <code>config.js</code> to show them here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>© <span id="copyright-year"></span> <span id="footer-name">Your Name</span></span><span>Built for the web · Hosted on GitHub Pages</span></div></footer>
+</body>
+</html>

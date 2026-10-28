@@ -1,0 +1,3 @@
+Upload your PDF into this folder and name it exactly cv.pdf.
+Example: assets/cv.pdf
+After committing it to GitHub, the website's preview and download buttons appear automatically.
