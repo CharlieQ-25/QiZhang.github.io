@@ -35,7 +35,7 @@
   }
   $('contact-placeholder').hidden = links.children.length > 0;
 
-  const pdf = 'assets/cv.pdf';
+  const pdf = 'cv.pdf';
   const empty = $('pdf-empty');
   const frame = $('pdf-frame');
   const status = $('cv-status');
@@ -51,7 +51,7 @@
     status.textContent = ok ? 'Available to view' : 'PDF not yet uploaded';
     if (ok) frame.src = pdf + '#toolbar=1&navpanes=0';
   }
-  // GitHub Pages serves the actual PDF after you upload assets/cv.pdf.
+  // GitHub Pages serves the actual PDF after you upload cv.pdf.
   // HEAD detects the missing file without downloading the full PDF first.
   fetch(pdf, { method: 'HEAD', cache: 'no-store' })
     .then(response => setAvailable(response.ok && (response.headers.get('content-type') || '').toLowerCase().includes('pdf')))

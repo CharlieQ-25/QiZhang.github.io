@@ -1,53 +1,25 @@
-# Personal CV Website (GitHub Pages)
+# Qi Zhang — Academic CV Website
 
-A minimal, responsive, static personal website for showcasing and downloading your CV. No frameworks, build tools, subscriptions, or server required.
+This GitHub Pages website is preconfigured with the public profile of Qi Zhang and a four-page CV (`cv.pdf`). No installation, commands, or code editing required.
 
-## Quick setup / 快速开始
+## Upload using only the GitHub website (no dragging)
 
-### 1. Edit your personal information / 修改个人信息
+1. Open the repository `https://github.com/CharlieQ-25/QiZhang.github.io`.
+2. In **Quick setup** click **uploading an existing file**. If the repository already contains files, click **Add file > Upload files** from the **Code** page.
+3. On the upload page, click **choose your files**.
+4. Open this UNZIPPED folder in Windows, press **Ctrl+A** to select all files, then click **Open**. All files are in one folder, including `cv.pdf`; there are no subfolders to upload.
+5. Wait for files to finish loading. Enter a commit message and click **Commit changes**.
+6. Open **Settings > Pages**. Set Source: **Deploy from a branch**, Branch: **main**, Folder: **/(root)**; click **Save**.
+7. With the repository named `QiZhang.github.io` under account `CharlieQ-25`, the likely project site URL is `https://charlieq-25.github.io/QiZhang.github.io/`. For `https://charlieq-25.github.io/`, rename the repository to `CharlieQ-25.github.io` first (Settings > General).
 
-Open `config.js` in a text editor or GitHub's editor. Change `name`, `role`, `intro`, `about`, and optionally `email`, `linkedin`, `github`, etc. Save the file.
+## Update your CV
 
-### 2. Add your CV / 上传 PDF
+Replace root `cv.pdf` with your new PDF (same exact file name). Updating it in GitHub republishes the site automatically.
 
-Add your real PDF résumé at **`assets/cv.pdf`** (exact spelling). You can upload it by opening the `assets` folder in your GitHub repository and using **Add file → Upload files**. The homepage will automatically show the PDF preview and download links when the file exists.
+## Update your biography
 
-**Privacy:** Once the website is public, your PDF is publicly accessible and may be indexed by search engines. Remove sensitive information such as your street address, government identification, and private phone numbers before publishing.
+Edit root `config.js`, then commit.
 
-### 3. Publish through GitHub Pages / 用 GitHub Pages 发布
+## Important privacy note
 
-1. Sign in to [github.com](https://github.com/) and select **New repository**.
-2. Name the new repository **`YOUR-USERNAME.github.io`**, replacing `YOUR-USERNAME` with your GitHub login (not your display name).
-3. Set repository visibility to **Public** (for GitHub Free). Click **Create repository**.
-4. Upload all site files **inside this ZIP folder** directly into the repository's root. Make sure `index.html` is at the top level, not inside another folder. Commit the changes.
-5. Open **Settings → Pages** in your repository. Under **Build and deployment**, choose **Deploy from a branch**. Select **main**, folder **/(root)**, then **Save**.
-6. Your website will be at **`https://YOUR-USERNAME.github.io/`** after deployment succeeds.
-
-Official instructions: https://docs.github.com/en/pages/quickstart
-
-### 4. Update the CV anytime / 更新简历
-
-Simply upload a new version of `assets/cv.pdf` with **the same exact file name**, replacing the old file, and commit. Your live website will show the updated CV after deployment. You do not have to edit any site code.
-
-## File structure
-
-```
-index.html        Homepage and PDF display
-style.css         Responsive design
-script.js         PDF detection + site behavior
-config.js         Name, title, summary, contact details
-favicon.svg       Browser tab icon
-.nojekyll         GitHub Pages static-site marker
-assets/
-  cv.pdf          YOUR FILE: upload this yourself
-```
-
-## Preview locally
-
-Run `python -m http.server 8000` inside this folder, then open `http://localhost:8000` in your browser. If the PDF has not been added, a placeholder message will show rather than a broken viewer.
-
-## Notes
-
-- GitHub Pages publishes static files. It **does not** support uploading PDFs directly from the public site as an authenticated dashboard. Add or replace your PDF in your GitHub repository.
-- A public Pages website is visible to everyone, even if it is later deployed from a private repository under a paid plan.
-- You can add a custom domain later in **Settings → Pages**.
+The supplied original PDF **contains a full date of birth and phone number**. The PDF is copied UNMODIFIED into this bundle. Because GitHub Pages and a public repository are publicly accessible, remove details you don't want indexed or downloaded *before* you publish. The website landing page only shows professional details and the public academic email, but the PDF itself contains those personal details.

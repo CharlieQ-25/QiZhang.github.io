@@ -1,19 +1,13 @@
-/*
-  PERSONALIZE YOUR WEBSITE HERE.
-  You can leave optional fields blank.
-  To add or update the PDF, upload a file named cv.pdf into the assets/ folder.
-*/
+/* Your personal website — update these fields as your CV changes. */
 window.SITE_CONFIG = {
-  name: "Your Name",
-  role: "Your professional title or research area",
-  location: "",
-  intro: "A simple home for my professional background, experience, and the latest version of my résumé.",
-  about: "Write 2–4 sentences about your education, work, research interests, or career goals. Keep this paragraph concise and relevant to the people you want to reach.",
-  email: "",
+  name: "Qi Zhang",
+  role: "Postdoctoral Fellow | Mechanical Engineering | York University",
+  location: "Toronto, Ontario, Canada",
+  intro: "Computational mechanics researcher studying nonlinear finite element dynamics, state estimation, and computational control for flexible space systems.",
+  about: "I am a Postdoctoral Fellow in the Department of Mechanical Engineering at York University. My research develops high-fidelity finite element models for flexible space systems and uses those models directly for state estimation and control synthesis. I am extending this work to physics-aware quantum algorithms for nonlinear finite element dynamics through Koopman lifting. I completed my Ph.D. in Space Science and Engineering at York University in 2026.",
+  email: "qi95@yorku.ca",
   linkedin: "",
-  github: "",
-  // Optional: use a short line to describe what your résumé emphasizes.
-  resumeNote: "Education, experience, projects, and selected achievements.",
-  // If empty, the website automatically uses the current year.
+  github: "https://github.com/CharlieQ-25",
+  resumeNote: "Full academic curriculum vitae: education, research contributions, publications, conference presentations, awards, and service.",
   footerYear: ""
 };
